@@ -4,7 +4,7 @@ This is a module is a modified version of [terraform-cidr-subnets](https://githu
 
 ## Netmask instead of bits
 
-In many situations, customers prefer to use netmask instead of bits. This is quite a simple change from the original post because new_bits = netmask - `base_cidr_block` cidr. You can generate networks using similar syntax:
+In many situations, customers prefer to use netmask instead of bits. This is quite a simple change from the original post because `new_bits = netmask - base_cidr_block` cidr. You can generate networks using similar syntax:
 
 ```hcl
 base_cidr_block = "10.0.100.0/16"
